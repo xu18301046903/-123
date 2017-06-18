@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/new_file.css" />
+    <script src="js/jquery-3.2.0.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+		<!--log-->
+		<div class="navbar-header">
+			<button type="type" class="navbar-toggle" data-toggle="collapse" data-target="#sub">
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">maizi xueyuan</a>
+		</div>
+			<div class="collapse navbar-collapse" id="sub">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html"><span class=" glyphicon glyphicon-print"></span> 后台管理</a></li>
+				<li class="active"><a href="user.html"><span class=" glyphicon glyphicon-print"></span> 用户管理</a></li>
+				<li><a href="conten.html"><span class=" glyphicon glyphicon-print"></span> 内容管理</a></li>
+				<li><a href="label.html"><span class=" glyphicon glyphicon-print"></span> 标签管理</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="gropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">admin
+					<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						
+						<li><a href="#" class="glyphicon glyphicon-download-alt"> 111</a></li>
+						<li><a href="#" class="glyphicon glyphicon-download-alt"> 222</a></li>
+						<li><a href="#" class="glyphicon glyphicon-download-alt"> 333</a></li>
+					</ul>
+					
+				</li>
+				
+				<li><a href="#"><span class="glyphicon glyphicon-off"></span> 退出</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<ul class="list-group">
+					<li class="list-group-item active"><a href="#">用户管理</a></li>
+					<li class="list-group-item"><a href="#">用户搜索</a></li>
+					<li class="list-group-item"><a href="#">添加用户</a></li>
+				</ul>
+			</div>
+			<div class="col-md-10">
+				<div class="page-header">
+					<h1>用户管理</h1>
+				</div>
+				<ul class="nav nav-tabs">
+					<li><a href="#">用户列表</a></li>
+					<li class="active"><a href="user-search.html">用户搜索</a></li>
+					<li><a href="" role="button" data-toggle="modal" data-target="#myModal">用户添加</a>
+						
+					</li>
+					
+				</ul>
+				<form >
+					<div class="alert alert-danger">
+						<strong>技巧提示</strong>
+						交电费辉光放电结婚的就发
+					</div>
+					<div class="form-group">
+						<label for="name">用户名</label>
+						<input type="name" placeholder="请输入用户名" class="form-control">
+						<label for="uid">uid</label>
+						<input type="uid" placeholder="请输入uid" class="form-control">
+						<label for="uid">用户组</label>
+						<select id="uid" class="form-control">
+							<option value="">sdff</option>
+							<option value="">sdff</option>
+							<option value="">sdff</option>
+						</select>
+						<button type="button" class="btn btn-default" >提交</button>
+					</div>
+				</form>
+				
+				
+			</div>
+			
+		</div>
+		
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+      </div>
+      <div class="modal-body">
+      	<form>
+      		<label for="name">用户名</label>
+			<input type="name" placeholder="请输入用户名" class="form-control">
+			<label for="name">用户密码</label>
+			<input type="name" placeholder="请输入用户密码" class="form-control">
+			<label for="name">确认用户密码</label>
+			<input type="name" placeholder="确认用户密码" class="form-control">
+			<label for="name">请输入用户优先</label>
+			<input type="name" placeholder="请输入用户优先" class="form-control">
+      	</form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+	</div>
+	</body>
+</html>
